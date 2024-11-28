@@ -59,3 +59,62 @@
  .icon:hover {
     color: yellow;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Make it take most of the viewport width */
+        padding: 1rem; /* Add some internal spacing */
+    };
+    .quote {
+        font-size: 24px; /* Reduce font size for better readability */
+        padding: 1rem; /* Reduce padding for a compact look */
+    };
+    .line {
+        width: 90%; /* Limit to container width */
+    };
+   
+    
+        .author {
+            font-size: 18px; /* Slightly smaller font */
+        };
+        
+            .icons {
+                font-size: 30px; /* Smaller icons */
+                gap: 10px; /* Less gap between icons */
+            }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 1rem; /* Add padding for spacing */
+    }
+
+    .quote {
+        font-size: 24px; /* Reduce font size for readability */
+        padding: 1.5rem; /* Adjust padding */
+    }
+
+    .line {
+        width: 100%; /* Ensure the line doesn't overflow */
+    }
+
+    .buttom {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 1rem; /* Add spacing between items */
+        margin: 1rem 0; /* Adjust margin */
+    }
+
+    .author {
+        font-size: 18px; /* Slightly smaller font */
+        text-align: center; /* Center align text */
+    }
+
+    .icons {
+        font-size: 30px; /* Adjust icon size */
+        justify-content: center; /* Center the icons */
+        gap: 10px; /* Reduce space between icons */
+    }
+}
